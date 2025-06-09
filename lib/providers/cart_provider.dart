@@ -1,28 +1,51 @@
+// lib/providers/cart_provider.dart
+
 import 'package:flutter/material.dart';
-import '../models/product.dart';
+import 'package:tienda/models/product.dart';
+
+class CartItem {
+  final Product product;
+  int quantity;
+  CartItem({ required this.product, this.quantity = 1 });
+}
 
 class CartProvider with ChangeNotifier {
-  final Map<Product, int> _items = {};
-  Map<Product, int> get items => _items;
+  final Map<String, CartItem> _items = {};
 
-  void addToCart(Product product) {
-    _items.update(product, (quantity) => quantity + 1, ifAbsent: () => 1);
-    notifyListeners();
-  }
+  List<CartItem> get items => _items.values.toList();
 
-  void updateQuantity(Product product, int cantidad) {
-    if (cantidad > 0) {
-      _items[product] = cantidad;
+  void addProduct(Product product) {
+    if (_items.containsKey(product.id)) {
+      _items[product.id]!.quantity++;
     } else {
-      _items.remove(product);
+      _items[product.id] = CartItem(product: product);
     }
     notifyListeners();
   }
 
-  double get total => _items.entries.fold(0, (sum, e) => sum + e.key.price * e.value);
+  void removeSingle(Product product) {
+    if (!_items.containsKey(product.id)) return;
+    if (_items[product.id]!.quantity > 1) {
+      _items[product.id]!.quantity--;
+    } else {
+      _items.remove(product.id);
+    }
+    notifyListeners();
+  }
+
+  void removeAll(Product product) {
+    _items.remove(product.id);
+    notifyListeners();
+  }
 
   void clearCart() {
     _items.clear();
     notifyListeners();
   }
+
+  double get totalPrice => _items.values
+      .fold(0.0, (sum, item) => sum + item.product.price * item.quantity);
+
+  int get totalCount =>
+      _items.values.fold(0, (sum, item) => sum + item.quantity);
 }

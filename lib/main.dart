@@ -1,12 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'providers/product_provider.dart';
-import 'providers/cart_provider.dart';
-import 'screens/home_screen.dart';
+import 'package:tienda/providers/product_provider.dart';
+import 'package:tienda/providers/cart_provider.dart';
+import 'package:tienda/screens/home_screen.dart';
+import 'package:tienda/screens/add_product_screen.dart';
+import 'package:tienda/screens/cart_screen.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
@@ -15,21 +21,15 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => CartProvider()),
       ],
       child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        
-        
-        title: 'Tienda',
-
-        // theme: ThemeData(
-        //   scaffoldBackgroundColor: const Color.fromARGB(255, 255, 0, 0),
-          
-          
-        // ),
-        home: HomeScreen(),
+        title: 'Mi Tienda',
+        // ← Aquí configuramos rutas en lugar de usar `home`
+        initialRoute: '/',
+        routes: {
+          '/':    (context) => const HomeScreen(),
+          '/add': (context) => const AddProductScreen(),
+          '/cart':(context) => const CartScreen(),
+        },
       ),
     );
   }
 }
-//https://unsplash.com
-//https://picsum.photos
-// https://via.placeholder.com
