@@ -80,7 +80,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 onSaved: (v) => _password = v!.trim(),
                 validator: (v) {
                   if (v == null || v.isEmpty) return 'Requerido';
-                  if (v.length < 4) return 'Mínimo 4 caracteres';
+                  //if (v.length < 4) return 'Mínimo 4 caracteres';
                   return null;
                 },
               ),

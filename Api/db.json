@@ -1,4 +1,28 @@
 {
+  "usuarios": [
+    {
+      "id": "u1",
+      "email": "x@x",
+      "password": "x",
+      "name": "Usuario Demo",
+      "favorites": [
+        "3",
+        "7",
+        "10",
+        "8"
+      ],
+      "cart": [
+        {
+          "productId": "2",
+          "quantity": 1
+        },
+        {
+          "productId": "5",
+          "quantity": 3
+        }
+      ]
+    }
+  ],
   "productos": [
     {
       "id": "1",
@@ -194,7 +218,7 @@
       "name": "prueba",
       "description": "aaa",
       "price": 3,
-      "stock": 2,
+      "stock": 1,
       "media": [
         {
           "url": "/images/1749451858641.mp4",
