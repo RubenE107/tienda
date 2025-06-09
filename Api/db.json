@@ -1,0 +1,214 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "name": "Camiseta Deportiva",
+      "description": "Camiseta transpirable para entrenamiento.",
+      "price": 199.99,
+      "stock": 49,
+      "media": [
+        {
+          "url": "/media/images/101.jpg",
+          "type": "image"
+        },
+        {
+          "url": "/media/videos/asdasdas.mp4",
+          "type": "video"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Tenis para Correr",
+      "description": "Tenis ligeros y cómodos, ideales para correr.",
+      "price": 849.5,
+      "stock": 30,
+      "media": [
+        {
+          "url": "/media/images/102.jpg",
+          "type": "image"
+        },
+        {
+          "url": "/media/videos/big_buck_bunny.mp4",
+          "type": "video"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Short Deportivo",
+      "description": "Short ligero para actividades deportivas.",
+      "price": 120,
+      "stock": 40,
+      "media": [
+        {
+          "url": "/media/images/103.jpg",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Botella de Agua",
+      "description": "Botella reutilizable de 750ml.",
+      "price": 70,
+      "stock": 100,
+      "media": [
+        {
+          "url": "/media/images/104.jpg",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Sudadera Unisex",
+      "description": "Sudadera cómoda para todo clima.",
+      "price": 299.99,
+      "stock": 20,
+      "media": [
+        {
+          "url": "/media/images/105.jpg",
+          "type": "image"
+        },
+        {
+          "url": "/media/videos/asdasdas.mp4",
+          "type": "video"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Gorra Deportiva",
+      "description": "Gorra para protegerte del sol.",
+      "price": 95.5,
+      "stock": 75,
+      "media": [
+        {
+          "url": "/media/images/106.jpg",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Mochila Fitness",
+      "description": "Mochila espaciosa para tus cosas del gym.",
+      "price": 375,
+      "stock": 25,
+      "media": [
+        {
+          "url": "/media/images/107.jpg",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Cuerda para Saltar",
+      "description": "Ideal para mejorar tu cardio.",
+      "price": 59.99,
+      "stock": 60,
+      "media": [
+        {
+          "url": "/media/images/108.jpg",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Guantes de Gimnasio",
+      "description": "Guantes con soporte para tus rutinas.",
+      "price": 149,
+      "stock": 45,
+      "media": [
+        {
+          "url": "/media/images/109.jpg",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Mat de Yoga",
+      "description": "Esterilla antideslizante y acolchada.",
+      "price": 210,
+      "stock": 52,
+      "media": [
+        {
+          "url": "/media/images/110.jpg",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "id": "1749448946320",
+      "name": "aa",
+      "description": "aa",
+      "price": 1,
+      "stock": 1,
+      "media": [
+        {
+          "url": "/images/1749448948653.jpg",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "id": "1749449335169",
+      "name": "aaa",
+      "description": "aaa",
+      "price": 1,
+      "stock": 0,
+      "media": [
+        {
+          "url": "/images/1749449337499.jpg",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "id": "1749450216044",
+      "name": "aa",
+      "description": "aa",
+      "price": 1,
+      "stock": 1,
+      "media": [
+        {
+          "url": "/images/1749450216275.jpeg",
+          "type": "image"
+        },
+        {
+          "url": "/images/1749450217292.jpeg",
+          "type": "image"
+        },
+        {
+          "url": "/images/1749450218372.jpeg",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "id": "1749451858651",
+      "name": "prueba",
+      "description": "aaa",
+      "price": 3,
+      "stock": 2,
+      "media": [
+        {
+          "url": "/images/1749451858641.mp4",
+          "type": "video"
+        },
+        {
+          "url": "/images/1749451860576.jpeg",
+          "type": "image"
+        },
+        {
+          "url": "/images/1749451861064.jpeg",
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}

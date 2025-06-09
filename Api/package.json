@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "express": "^5.1.0",
+    "json-server": "^1.0.0-beta.3",
+    "multer": "^2.0.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "api",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
